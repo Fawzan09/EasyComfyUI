@@ -9,6 +9,7 @@ experience required. Just click ▶️ on each cell in order.
 ## 🛒 Get This Notebook
 
 👉 **[Purchase EasyComfyUI here](https://buymeacoffee.com/fawzan/e/570955)**
+YT : https://youtu.be/oFDFtkm0WFU
 
 ---
 
