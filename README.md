@@ -9,7 +9,6 @@ experience required. Just click ▶️ on each cell in order.
 ## 🛒 Get This Notebook
 
 👉 **[Purchase EasyComfyUI here](https://buymeacoffee.com/fawzan/e/570955)**
-YT : https://youtu.be/oFDFtkm0WFU
 
 ---
 
@@ -156,6 +155,35 @@ Before you close the Colab tab, run the **Step 4: Save** cell. This backs
 up your installed add-ons and saved workflows to your Google Drive, so
 they're automatically restored the next time you run Step 1. If you skip
 this, anything you installed or built this session will be lost.
+
+---
+
+## 🧩 Troubleshooting: A Custom Node Fails to Load
+
+If you see an error in the Step 3 logs that looks like this:
+
+```
+FileNotFoundError: [Errno 2] No such file or directory: '.../custom_nodes/<some-node-name>/__init__.py'
+```
+
+This means that add-on's backup on your Google Drive is incomplete (a
+file is missing), often because a previous session's Step 4 backup was
+interrupted partway through (for example, if Colab disconnected while it
+was saving). Fix it like this:
+
+1. **Remove the broken copy in both places** — run a new cell with:
+   ```python
+   import shutil, os
+   node_name = "PUT_THE_BROKEN_NODE_NAME_HERE"
+   shutil.rmtree(f"/content/ComfyUI/custom_nodes/{node_name}", ignore_errors=True)
+   shutil.rmtree(f"{DRIVE_DIR}/saved_custom_nodes/{node_name}", ignore_errors=True)
+   ```
+   (Replace `PUT_THE_BROKEN_NODE_NAME_HERE` with the folder name shown in
+   the error message.)
+2. **Reinstall it fresh** — paste that add-on's GitHub link into the
+   "custom node repo links" box in Step 2 and run it again.
+3. **Re-run Step 3**, confirm the error is gone, then **run Step 4** to
+   save a complete, working copy back to Drive this time.
 
 ---
 
