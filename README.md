@@ -136,7 +136,9 @@ The only real limit is your **Colab GPU's VRAM**:
   again.
 
 ### Step 2b: Download LoRAs from Civitai (Optional)
-This extra cell downloads a list of LoRA files from Civitai in one go.
+Paste one or more Civitai LoRA download links into the box, separated by
+new lines or commas (same as the other download boxes in Step 2). Leave
+it empty to skip this cell entirely.
 
 **Set up your API key first (recommended, more secure than pasting it):**
 1. Go to civitai.com → Account Settings → API Keys, and generate one.
@@ -148,8 +150,7 @@ You can also paste the key directly into the box above the cell instead,
 but the Secret method is safer — it's never saved inside the notebook
 file itself, so it stays private even if you share the notebook.
 
-To add or remove LoRAs, edit the `downloads` list inside the cell — each
-line is a `(download link, filename to save it as)` pair. Already
+Filenames are picked up automatically from Civitai, and already
 downloaded files are skipped automatically on re-runs.
 
 ### Step 3: Launch ComfyUI
