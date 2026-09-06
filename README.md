@@ -135,6 +135,23 @@ The only real limit is your **Colab GPU's VRAM**:
   (click the 🔑 key icon in the left sidebar) so you never have to paste it
   again.
 
+### Step 2b: Download LoRAs from Civitai (Optional)
+This extra cell downloads a list of LoRA files from Civitai in one go.
+
+**Set up your API key first (recommended, more secure than pasting it):**
+1. Go to civitai.com → Account Settings → API Keys, and generate one.
+2. In Colab, click the 🔑 key icon in the left sidebar.
+3. Add a new secret named exactly `CIVITAI_TOKEN`, paste your key as the
+   value, and turn on "Notebook access" for it.
+
+You can also paste the key directly into the box above the cell instead,
+but the Secret method is safer — it's never saved inside the notebook
+file itself, so it stays private even if you share the notebook.
+
+To add or remove LoRAs, edit the `downloads` list inside the cell — each
+line is a `(download link, filename to save it as)` pair. Already
+downloaded files are skipped automatically on re-runs.
+
 ### Step 3: Launch ComfyUI
 Choose a memory profile:
 - **Low VRAM** — safest default, works well on the free-tier GPU.
