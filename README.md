@@ -8,11 +8,24 @@ experience required. Just click ▶️ on each cell in order.
 
 ## 🖼️ Example Edits (Before → After)
 
-A quick look at the kind of targeted, single-element edits this pipeline can pull off — everything else in the photo stays untouched:
+A quick look at the kind of targeted, single-element edits this pipeline can pull off — everything else in the photo stays untouched.
 
-| Original | Removed Eyeglasses | Changed Hairstyle | Replaced Shirt | Changed Background |
-|:---:|:---:|:---:|:---:|:---:|
-| ![Original](img/og1.jpg) | ![Removed Eyeglasses](img/removeeyeglass.png) | ![Changed Hairstyle](img/changehairstyle.png) | ![Replaced Shirt](img/replaceshirt.png) | ![Changed Background](img/changebg.png) |
+**Original:**
+
+<img src="img/og1.jpg" width="400">
+
+**Edits:**
+
+<table>
+  <tr>
+    <td align="center"><b>Removed Eyeglasses</b><br><img src="img/removeeyeglass.png" width="400"></td>
+    <td align="center"><b>Changed Hairstyle</b><br><img src="img/changehairstyle.png" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Replaced Shirt</b><br><img src="img/replaceshirt.png" width="400"></td>
+    <td align="center"><b>Changed Background</b><br><img src="img/changebg.png" width="400"></td>
+  </tr>
+</table>
 
 ---
 
