@@ -6,6 +6,16 @@ experience required. Just click ▶️ on each cell in order.
 
 ---
 
+## 🖼️ Example Edits (Before → After)
+
+A quick look at the kind of targeted, single-element edits this pipeline can pull off — everything else in the photo stays untouched:
+
+| Original | Removed Eyeglasses | Changed Hairstyle | Replaced Shirt | Changed Background |
+|:---:|:---:|:---:|:---:|:---:|
+| ![Original](img/og1.jpg) | ![Removed Eyeglasses](img/removeeyeglass.png) | ![Changed Hairstyle](img/changehairstyle.png) | ![Replaced Shirt](img/replaceshirt.png) | ![Changed Background](img/changebg.png) |
+
+---
+
 ## 🛒 Get This Notebook
 
 👉 **[Purchase EasyComfyUI here](https://buymeacoffee.com/fawzan/e/570955)**
