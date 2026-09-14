@@ -6,6 +6,28 @@ experience required. Just click ▶️ on each cell in order.
 
 ---
 
+## 🆕 What's New
+
+- **Faster setup** — models and add-ons install and restore much quicker
+  than before.
+- **Two links every time** — you now get both a Cloudflare and a
+  Localtunnel link when you launch, so if one won't open, just try the
+  other. (An optional third link via ngrok is also available.)
+- **Nothing gets lost** — your generated images always save to your
+  Google Drive, and your installed add-ons/workflows now back up and
+  restore properly every time.
+- **Download from Civitai too** — a new optional step lets you grab
+  checkpoints, LoRAs, embeddings, ControlNets, VAEs, upscalers, and
+  hypernetworks straight from Civitai, alongside the usual Hugging Face
+  downloads.
+- **Fewer scary error messages** — if a step is skipped or a box is left
+  empty, you now get a plain, friendly message instead of a big red
+  error block.
+- **Smoother, more stable generations** — fixed an issue that could make
+  image generation stall or run much slower than it should.
+
+---
+
 ## 🖼️ Example Edits (Before → After)
 
 A quick look at the kind of targeted, single-element edits this pipeline can pull off — everything else in the photo stays untouched.
@@ -97,10 +119,10 @@ Wait for the message:
 > only worry if the cell stops with a red error and no ✅ at the end.
 
 ### Step 1b: Keep Colab Awake (Optional but recommended)
-Run this cell once after Step 1 if you're planning a long session. It plays
-a silent audio loop and sends periodic activity signals to help prevent
-Colab from disconnecting an idle tab. Leave the browser tab open in the
-background while you work.
+Run this cell once after Step 1 if you're planning a long session. It
+periodically clicks Colab's own "Connect" button in the background, which
+counts as activity and helps prevent Colab from disconnecting an idle tab.
+Leave the browser tab open in the background while you work.
 
 ### Step 2: Download Models
 Paste direct download links into the boxes for whichever model types you
@@ -158,10 +180,13 @@ The only real limit is your **Colab GPU's VRAM**:
   (click the 🔑 key icon in the left sidebar) so you never have to paste it
   again.
 
-### Step 2b: Download LoRAs from Civitai (Optional)
-Paste one or more Civitai LoRA download links into the box, separated by
-new lines or commas (same as the other download boxes in Step 2). Leave
-it empty to skip this cell entirely.
+### Step 2b: Download from Civitai (Optional)
+Civitai hosts several kinds of models beyond just checkpoints and LoRAs -
+this step covers the ones ComfyUI supports natively, each with its own
+box: **checkpoints, LoRAs, embeddings, ControlNets, VAEs, upscalers, and
+hypernetworks**. Paste one or more links into the matching box, separated
+by new lines or commas (same as the other download boxes in Step 2).
+Leave everything empty to skip this cell entirely.
 
 **Set up your API key first (recommended, more secure than pasting it):**
 1. Go to civitai.com → Account Settings → API Keys, and generate one.
@@ -190,6 +215,19 @@ Click ▶️ and wait. After ComfyUI starts, you'll see **two links** printed:
 ```
 
 Click the **Cloudflare link** first. If it works, you're done — enjoy!
+
+#### 🧪 Optional: a third link via ngrok
+There's also an **"Also try ngrok"** checkbox in Step 3, off by default.
+If you turn it on, you'll need an ngrok authtoken (free signup at
+ngrok.com), added either as a Colab Secret named `NGROK_TOKEN` or pasted
+into the box next to the checkbox. A third link will then print alongside
+the other two.
+
+💡 **Worth trying:** some users have found the ngrok link opens noticeably
+*faster* than the Cloudflare link. Results can vary by account/region
+though — community reports also describe ngrok's free tier as sometimes
+unstable with ComfyUI specifically, so treat it as a good option to test
+for yourself rather than a guaranteed upgrade.
 
 ### Step 4: Save Your Work (Optional, but do this before closing)
 Before you close the Colab tab, run the **Step 4: Save** cell. This backs
