@@ -72,13 +72,13 @@ the left, result on the right.
   <tr>
     <td><img src="img/or2.jpg" width="200"></td>
     <td><img src="img/r2.png" width="200"></td>
-    <td><img src="img/2k2.png" width="200"></td>
+    <td><img src="img/2k3.png" width="200"></td>
     <td>—</td>
   </tr>
   <tr>
     <td><img src="img/or3.jpg" width="200"></td>
     <td><img src="img/r3.png" width="200"></td>
-    <td><img src="img/2k3.png" width="200"></td>
+    <td><img src="img/2k2.png" width="200"></td>
     <td>—</td>
   </tr>
 </table>
