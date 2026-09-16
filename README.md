@@ -41,15 +41,15 @@ the left, result on the right.
     <td align="center"><b>After</b></td>
   </tr>
   <tr>
-    <td><img src="img/or1.png" width="200"></td>
+    <td><img src="img/or1.jpg" width="200"></td>
     <td><img src="img/r1.png" width="200"></td>
-    <td><img src="img/or2.png" width="200"></td>
+    <td><img src="img/or2.jpg" width="200"></td>
     <td><img src="img/r2.png" width="200"></td>
   </tr>
   <tr>
-    <td><img src="img/or3.png" width="200"></td>
+    <td><img src="img/or3.jpg" width="200"></td>
     <td><img src="img/r3.png" width="200"></td>
-    <td><img src="img/or4.png" width="200"></td>
+    <td><img src="img/or4.jpg" width="200"></td>
     <td><img src="img/r4.png" width="200"></td>
   </tr>
 </table>
